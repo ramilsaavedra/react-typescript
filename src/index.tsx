@@ -3,18 +3,11 @@ import { createRoot } from 'react-dom/client';
 // import GuestList from './state/GuestList';
 // import UserSearch from './state/UserSearch';
 // import EventComponent from './events/EventComponent';
-import UserSearch from './classes/UserSearch';
+// import UserSearch from './classes/UserSearch';
+import UserSearch from './refs/UserSearch';
 
 const App = () => {
-  return (
-    <UserSearch
-      users={[
-        { name: 'Jet', age: 27 },
-        { name: 'AJ', age: 27 },
-        { name: 'Ramil', age: 27 },
-      ]}
-    />
-  );
+  return <UserSearch />;
 };
 
 createRoot(document.querySelector('#root')!).render(<App />);
