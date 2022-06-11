@@ -1,8 +1,11 @@
 import ReactDOM from 'react-dom';
-import Parent from './props/Parent';
+import { createRoot } from 'react-dom/client';
+// import Parent from './props/Parent';
+// import GuestList from './state/GuestList';
+import UserSearch from './state/UserSearch';
 
 const App = () => {
-  return <Parent />;
+  return <UserSearch />;
 };
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+createRoot(document.querySelector('#root')!).render(<App />);
