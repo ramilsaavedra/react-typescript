@@ -1,13 +1,12 @@
-import { useState } from 'react';
-import Parent from './props/Parent';
 import './App.css';
+import GuestList from './state/GuestList';
+import UserSearch from './state/UserSearch';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Parent />
+      <UserSearch />
+      <GuestList />
     </>
   );
 }
