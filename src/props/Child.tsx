@@ -4,25 +4,11 @@ interface ChildProps {
   children?: React.ReactNode;
 }
 
-export const Child = ({ color, onClick }: ChildProps) => {
+export const Child: React.FC<ChildProps> = ({ color, onClick }) => {
   return (
     <div>
       {color}
-      <button onClick={onClick}>Click me</button>
-    </div>
-  );
-};
-
-export const ChildAsFC: React.FC<ChildProps> = ({
-  color,
-  onClick,
-  children,
-}) => {
-  return (
-    <div>
-      {color}
-      {children}
-      <button onClick={onClick}>Click me</button>
+      <button onClick={onClick}>Click Me</button>
     </div>
   );
 };
