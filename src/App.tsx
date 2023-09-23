@@ -1,10 +1,10 @@
 import './App.css';
-import EventComponent from './events/EventComponent';
+import UserSearch from './state/UserSearch';
 
 function App() {
   return (
     <>
-      <EventComponent />
+      <UserSearch />
     </>
   );
 }
